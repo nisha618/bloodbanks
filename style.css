@@ -1,0 +1,68 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: rgb(231, 239, 243);
+
+}
+
+p {
+  color: black;
+}
+
+.header {
+background-image: url("image.jpg");
+height: 8rem;
+padding: 4rem;
+margin: 0 auto;
+align-content: center;
+color: red;
+}
+
+.header1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 21%;
+  margin-right: 21%;
+  background-color: rgb(194, 18, 18);
+  color: aliceblue;
+  display: block;
+}
+
+.header2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgb(194, 18, 18);
+  color: aliceblue;
+  display: block;
+}
+
+
+.card {
+  background-color: rgb(202, 227, 238);
+  color: rgb(199, 60, 60);
+  padding: 2rem;
+  height: 6rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
